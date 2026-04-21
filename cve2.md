@@ -145,19 +145,3 @@ Potential impact includes:
 - invalid robot state estimation
 - unsafe downstream behavior if `NaN` values are not handled correctly
 
-## Suggested CVE wording
-
-> In the `foxy` branch of `ros-controls/ros2_controllers`, `diff_drive_controller` does not properly validate or saturate extreme but finite floating-point angular velocity commands. A crafted angular velocity command can be accepted and propagated through odometry computation, resulting in corrupted odometry output with NaN position and orientation values.
-
-## Credits
-
-Issue reproduced and documented by: `<your name or handle>`
-
-## References
-
-Add links here after publication, for example:
-
-- Source repository
-- Demo repository
-- Issue tracker entry
-- Advisory link
